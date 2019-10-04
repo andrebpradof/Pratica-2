@@ -1,9 +1,8 @@
-public class Usuario {
+public class Usuario implements IElemento {
     private String nome;
 
     @Override
-    public boolean equals() {
-
+    public boolean equals(IElemento elem) {
     }
 
     public String getNome() {

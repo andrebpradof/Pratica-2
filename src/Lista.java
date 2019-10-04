@@ -1,4 +1,4 @@
-public abstract class Lista {
+public abstract class Lista implements Imprimivel{
     protected int tamanho;
 
     public int tamanho(){

@@ -1,2 +1,3 @@
-public class Imprimivel {
+public interface Imprimivel {
+    public void imprimir();
 }
