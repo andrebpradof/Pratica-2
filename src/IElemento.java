@@ -1,3 +1,3 @@
 public interface IElemento {
-    public boolean equals(IElemento elem);
+    boolean equals(IElemento elem);
 }

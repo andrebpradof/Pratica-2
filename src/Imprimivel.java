@@ -1,3 +1,3 @@
 public interface Imprimivel {
-    public void imprimir();
+    void imprimir();
 }
