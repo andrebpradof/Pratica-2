@@ -1,4 +1,4 @@
-public class ListaEncadeada extends Lista {
+public class ListaEncadeada extends Lista  {
     private No topo;
 
     public void inserir(IElemento elem){

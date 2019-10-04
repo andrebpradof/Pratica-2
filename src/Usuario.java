@@ -7,7 +7,11 @@ public class Usuario implements IElemento {
 
     @Override
     public boolean equals(IElemento elem) {
-        return true;
+        if(elem instanceof Usuario){
+            Usuario u = (Usuario)elem;
+            return this.nome.equals(u.nome);
+        }
+        return false;
     }
 
     public String getNome() {
