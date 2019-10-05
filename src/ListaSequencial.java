@@ -1,9 +1,5 @@
 public class ListaSequencial extends Lista {
-    private IElemento[] data;
-
-    ListaSequencial(){
-        this.data = new IElemento[10];
-    }
+    private IElemento[] data = new IElemento[10];
 
     @Override
     public void inserir(IElemento elem) {
