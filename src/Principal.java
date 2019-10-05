@@ -12,7 +12,7 @@ public class Principal	{
         lista.inserir(new Usuario("Pedro"));
         lista.inserir(new Usuario("Gustavo"));
         lista.inserir(new Usuario("Larissa"));
-        lista.inserir(new Usuario("Flavia"));
+        //lista.inserir(new Usuario("Flavia"));
         lista.imprimir();
         lista.remover(new Usuario("Gustavo"));
         lista.remover(new Usuario("Flavia"));
