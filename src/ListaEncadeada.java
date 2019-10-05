@@ -1,16 +1,15 @@
-public class ListaEncadeada extends Lista  {
+public class ListaEncadeada extends Lista {
     private No topo;
 
     @Override
-    public void inserir(IElemento elem){
+    public void inserir(IElemento elem) {
         No novoNo = new No();
         novoNo.setNext(null);
         novoNo.setElemento(elem);
-        if(topo == null){
+        if (topo == null) {
             topo = novoNo;
             tamanho = 1;
-        }
-        else {
+        } else {
             No aux = topo;
             while (aux.getNext() != null) {
                 aux = aux.getNext();
@@ -23,23 +22,24 @@ public class ListaEncadeada extends Lista  {
 
     @Override
     public void remover(IElemento elem) {
-        if(topo == null){
+        if (topo == null) {
             return;
         }
 
         No aux = topo;
-        for(int i=0; i<tamanho(); i++) {
-            if(aux.getNext() != null){
-                if(aux.getNext().equals(elem)){
+        while (aux.getNext() != null) {
+            if (elem.equals(aux.getNext().getElemento())) {
+                if(aux.getNext().getNext() != null)
                     aux.setNext(aux.getNext().getNext());
-                    tamanho--;
-                    return;
-                }
+                else
+                    aux.setNext(null);
+                tamanho--;
+                return;
             }
-            aux = aux.getNext();
+            aux =aux.getNext();
         }
+}
 
-    }
 
     @Override
     public void imprimir(){
@@ -48,6 +48,6 @@ public class ListaEncadeada extends Lista  {
             System.out.print(aux.getElemento() + " ");
             aux = aux.getNext();
         }
-
+        System.out.println();
     }
 }
