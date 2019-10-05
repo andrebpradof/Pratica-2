@@ -6,6 +6,7 @@ public class Principal	{
         //	mudar	o	comando	abaixo	para	lista	=	new	ListaSequencial();
         //	deverá	gerar	o	mesmo	efeito!
         lista	=	new ListaEncadeada();
+        //lista	=	new	ListaSequencial();
         lista.inserir(new Usuario("Marcelo"));
         lista.inserir(new Usuario("Joao"));
         lista.inserir(new Usuario("Pedro"));

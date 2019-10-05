@@ -12,6 +12,7 @@ public class ListaSequencial extends Lista {
         int i;
         for (i=0; i<tamanho; i++){
             if(elem.equals(data[i])){
+                tamanho--;
                 while(i<tamanho){
                     data[i]=data[++i];
                 }
@@ -20,7 +21,10 @@ public class ListaSequencial extends Lista {
         }
     }
 
-    public void imprimir(IElemento){
-
+    @Override
+    public void imprimir(){
+        for(int i=0; i<tamanho();i++){
+            System.out.println(data[i].toString()+" ");
+        }
     }
 }
