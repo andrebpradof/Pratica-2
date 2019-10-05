@@ -27,24 +27,26 @@ public class ListaEncadeada extends Lista {
         }
 
         No aux = topo;
-        while (aux.getNext() != null) {
-            if (elem.equals(aux.getNext().getElemento())) {
-                if(aux.getNext().getNext() != null)
-                    aux.setNext(aux.getNext().getNext());
-                else
-                    aux.setNext(null);
-                tamanho--;
-                return;
+        for (int i = 0; i < tamanho(); i++) {
+            if (aux.getNext() != null) {
+                if (elem.equals(aux.getNext().getElemento())) {
+                    if (aux.getNext().getNext() != null)
+                        aux.setNext(aux.getNext().getNext());
+                    else
+                        aux.setNext(null);
+                    tamanho--;
+                    return;
+                }
+                aux = aux.getNext();
             }
-            aux =aux.getNext();
         }
-}
+    }
 
 
     @Override
-    public void imprimir(){
+    public void imprimir() {
         No aux = topo;
-        while (aux.getNext() != null){
+        for (int i = 0; i < tamanho(); i++) {
             System.out.print(aux.getElemento() + " ");
             aux = aux.getNext();
         }

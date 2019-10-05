@@ -21,4 +21,9 @@ public class Usuario implements IElemento {
     public void setNome(String s) {
         this.nome = s;
     }
+
+    @Override
+    public String toString(){
+        return nome;
+    }
 }
