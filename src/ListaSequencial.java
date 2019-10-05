@@ -28,7 +28,7 @@ public class ListaSequencial extends Lista {
     @Override
     public void imprimir() {
         for (int i = 0; i < tamanho(); i++) {
-            System.out.print(data[i].toString() + " ");
+            System.out.print(data[i] + " ");
         }
         System.out.println();
     }
