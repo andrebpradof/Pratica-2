@@ -21,7 +21,7 @@ Questões de prova:
 
         Dependência:
             Principal com ListaEncadeada, ListaSequencial e Usuario
-            IElemento com ListaEncadeada e ListaSequencial
+            ListaEncadeada e ListaSequencial com IElemento
 
 */
 public class Principal	{
