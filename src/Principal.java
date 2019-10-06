@@ -4,6 +4,12 @@ Questões de prova:
     1. Quais são os métodos polimórficos do diagrama acima?
         Os métodos são: inserir(IElemento elem), remover(IElemento elem), imprimir() e equals().
 
+    2. Por quê Lista foi implementada como uma classe abstrata e Imprimivel foi definida como uma interface?
+        Lista foi implementada como classe abstrata pois ela serve de modelo para todas suas classes derivadas,
+        tais como lista encadeada e sequencial.
+        Imprimivel foi definida como uma interface pois nem todos os tipos de lista podem apresentar o
+        método imprimir
+
     3. Como você poderia estender o diagrama acima para permitir que sua lista armazene objetos de
     uma classe Data (contendo mês, dia e ano)? Implemente.
         Primeiramente, seria criado uma classe Data com os respectivos atributos e métodos, como a classe Usuario
